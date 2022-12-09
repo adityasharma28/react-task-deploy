@@ -1,0 +1,39 @@
+.card {
+  width: 100%;
+  justify-self: center;
+  height: 15rem;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    &__title {
+      font-weight: bold;
+    }
+  }
+  &__footer {
+    position: relative;
+    right: 1px;
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    // &__left {
+    //   align-self: flex-start;
+    //   justify-self: start;
+    // }
+    &__right {
+      //   align-self: flex-end;
+      //   justify-self: end;
+      margin-left: auto;
+    }
+  }
+}
